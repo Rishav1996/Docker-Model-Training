@@ -1,0 +1,2 @@
+# For building/updating the train_image
+docker build -t train_image:latest .
