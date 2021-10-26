@@ -6,7 +6,7 @@ import sys
 
 
 def connection():
-    engine = create_engine('mysql+pymysql://docker_user:1234@192.168.56.1/mlops_model')
+    engine = create_engine('mysql+pymysql://docker_user:12345678@192.168.56.1/mlops_model')
     return engine
 
 
