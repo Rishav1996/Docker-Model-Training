@@ -37,15 +37,3 @@ jobs:
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
-
-    # - name: Build the Docker image
-    #   uses: actions/checkout@v1
-    #   with:
-    #     context: ./models/Dockerfile
-    #     tags: ${{ secrets.DOCKER_HUB_USERNAME }}/train_image:latest
-    #     push: true
-    #   run: docker build . --file ./models/Dockerfile --tag train_image:$(date +%s)
-
-    # - name: Image digest
-    #   uses: actions/checkout@v1
-    #   run: echo ${{ steps.docker_build.outputs.digest }}
